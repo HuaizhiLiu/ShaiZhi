@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+	.bb {
+	font-size: 15px;
+	border-radius: 15px;
+	border-color: rgba(193,251,255,1.00);
+	background-color: rgba(178,232,255,0.60);
+	color: black;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+	.b {
+	font-size: 70px;
+	border-radius: 15px;
+	border-color: rgba(193,251,255,1.00);
+	background-color: rgba(178,232,255,0.60);
+	color: black;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	padding: 15px 32px;
+	}
+	.p {
+	font-size: 180px;
+	text-align:center
+	}
+	.c{
+	text-align:center	
+	}
+</style>
+<script>
+	var s = 5
+	var n = 0
+function myFunction(){
+	var n = 0
+	s = document.frm.name.value
+	n = Math.floor(Math.random() * (s)) ;
+	document.getElementById("number").innerHTML = n + 1 ;
+}
+</script>
+</head>
+<body>
+	<button onclick="myFunction()" class="b">Start</button>
+	<div align="center"><form name="frm">
+<input type="number" name="name" id="id_name" value="5"></input>
+</form></div>
+	<p id="number" class="p">0</p>
+	<p class="c">©魔法少女小智智</p>
+	<p class="c">注：不是声控也没有暗箱操作</p>
+	<p class="c">Authorized as Open-Source Project</p>
+</body>
+</html>
